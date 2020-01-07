@@ -64,7 +64,10 @@ function draw() {
 //drawSquareLimit();
 //drawCircularLimits();
 
+ctx.save();
+ctx.strokeStyle = "#FFF";
 cp.display(ctx);
+ctx.restore();
 
 
 window.requestAnimationFrame(draw);
