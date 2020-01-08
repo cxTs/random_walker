@@ -37,11 +37,11 @@ CircularPath.prototype.outerContains = function(x, y) {
 
 CircularPath.prototype.display = function(ctx) {
     ctx.beginPath();
-    ctx.arc(centerX, centerY, this.minRadius, 0, pi2);
+    ctx.arc(centerX, centerY, this.minRadius, 0, this.TWO_PI);
     ctx.closePath();
     ctx.stroke();
     ctx.beginPath();
-    ctx.arc(centerX, centerY, this.maxRadius, 0, pi2);
+    ctx.arc(centerX, centerY, this.maxRadius, 0, this.TWO_PI);
     ctx.closePath();
     ctx.stroke();
 }
